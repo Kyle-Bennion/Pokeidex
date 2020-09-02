@@ -4,8 +4,16 @@ import { pokeApi } from "./AxiosSerivce.js"
 
 
 class ApiPokeindexService {
+  //This is me going to get the Pokemon?
   async getAll() {
-    let results = await pokeApi.get('')
+    let res = await pokeApi.get('')
+    ProxyState.apiPokemon = res.data.results
+  }
+  async getDetails(id) {
+
+    let res = await pokeApi.get(id)
+    ProxyState.activePokemon = new Pokemon(res.data)
+
   }
 
 

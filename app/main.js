@@ -1,7 +1,9 @@
-import ValuesController from "./Controllers/ValuesController.js";
+import ApiPokeidexController from "./Controllers/ApiPokeidexController.js";
+import MyPokeidexController from "./Controllers/MyPokeidexController.js";
 
 class App {
-  valuesController = new ValuesController();
+  apiPokeidexController = new ApiPokeidexController()
+  myPokeidexController = new MyPokeidexController()
 }
 
 window["app"] = new App();

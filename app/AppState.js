@@ -5,6 +5,7 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
   apiPokemon = []
   myPokemon = []
+  activePokemon = null
 }
 
 export const ProxyState = new Proxy(new AppState(), {
