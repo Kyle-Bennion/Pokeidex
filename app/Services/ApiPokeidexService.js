@@ -1,6 +1,6 @@
 import { ProxyState } from "../AppState.js"
 import Pokemon from "../Models/Pokemon.js"
-import { pokeApi } from "./AxiosSerivce.js"
+import { pokeApi } from "../Services/AxiosService.js"
 
 
 class ApiPokeindexService {
@@ -17,3 +17,6 @@ class ApiPokeindexService {
 
 
 }
+
+const apiPokeindexService = new ApiPokeindexService()
+export default apiPokeindexService
