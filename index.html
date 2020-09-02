@@ -23,8 +23,28 @@
 
 
 
-    <main>
-        <div id="app"></div>
+    <main class="container-fluid">
+        <div class="row h-100">
+            <div class="col-3 bg-info">
+                <h1>All Spells</h1>
+                <ul id="api-spells">
+                    <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                </ul>
+            </div>
+            <div class="col-6 spells">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1>Active Spell</h1>
+                        <div id="active-pokemon"></div>
+                    </div>
+                </div>
+                <div class="row" id="active-pokemon"></div>
+            </div>
+            <div class="col-3 bg-info spells">
+                <h1>My Spells</h1>
+                <ul id="my-spells"></ul>
+            </div>
+        </div>
     </main>
 
 
